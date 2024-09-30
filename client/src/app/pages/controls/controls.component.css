@@ -1,0 +1,37 @@
+/* Stil für die Überschrift */
+h1 {
+    text-align: center; /* Zentriert die Überschrift */
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Container-Stil */
+div {
+    box-sizing: border-box; /* Sorgt dafür, dass Padding und Border in der Breitenberechnung inkludiert sind */
+}
+
+/* Flex-Container-Stil, der die list-element Divs enthält */
+div[style] {
+    display: flex; /* Aktiviert Flexbox */
+    flex-direction: column; /* Stapelt die Kinder-Elemente vertikal */
+    align-items: center; /* Zentriert die Kinder-Elemente horizontal */
+    padding: 20px; /* Fügt Padding hinzu für Abstand um die Elemente */
+    margin: 0 auto; /* Zentriert den Container horizontal und entfernt vertikale Margins */
+    max-width: 600px; /* Maximale Breite des Containers */
+}
+
+/* Stil für jedes list-element */
+.list-element {
+    display: flex; /* Aktiviert Flexbox für die list-element Divs */
+    align-items: center; /* Vertikale Zentrierung der Inhalte */
+    justify-content: space-between; /* Horizontale Ausrichtung der Inhalte am Anfang */
+    width: 100%; /* Volle Breite innerhalb des Containers */
+    margin-bottom: 10px; /* Abstand zwischen den list-elements */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Stil für Icons */
+.sbb-icon-small {
+    margin-right: 20px; /* Abstand zwischen Icon und Toggle-Switch */
+}

@@ -1,0 +1,30 @@
+<map-nav></map-nav>
+
+<sbb-form-field label="Datepicker">
+    <sbb-datepicker
+      [arrows]="arrows.value"
+      [toggle]="toggle.value"
+    >
+      <input
+        type="text"
+        sbbDateInput
+        sbbInput
+        [formControl]="date"
+        [readonly]="readonly.value"
+        (dateChange)="dateChangeEvent($event)"
+        (dateInput)="dateInputEvent($event)"
+      />
+    </sbb-datepicker>
+  </sbb-form-field>
+
+<form>
+<sbb-form-field>
+    <sbb-label>Name</sbb-label>
+    <input type="text" sbbInput placeholder="Name" />
+</sbb-form-field>
+
+<sbb-form-field>
+    <sbb-label>Description</sbb-label>
+    <input type="text" sbbInput placeholder="Description" />
+</sbb-form-field>
+</form>

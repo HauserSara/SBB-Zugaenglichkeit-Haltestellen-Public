@@ -1,0 +1,12 @@
+.sidebar-frame {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    border: 1px solid #b7b7b7;
+  }
+  
+  /* sbb-icon-sidebar-content {
+    padding-bottom: -100px;
+  } */
+
+  

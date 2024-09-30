@@ -1,0 +1,59 @@
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 100px; /* Größerer Bereich für die Beschriftung */
+    height: 40px; /* Höher für bessere Lesbarkeit */
+    background-color: #e5e5e5;
+    border-radius: 20px; /* Abgerundete Ecken */
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 50px; /* Startposition einstellen */
+    bottom: 0px;
+    background-color: white;
+    border: #8d8d8d solid 1px;
+    transition: .4s;
+    border-radius: 20px; /* Abgerundete Ecken für den Schalter */
+  }
+  
+  input:checked + .switch {
+    left: 50px; /* Bewegen nach rechts */
+    right: 0px;
+  }
+  
+  .label {
+    position: absolute;
+    display: flex; /* Flexbox für einfache Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    color: black;
+    font-size: 16px;
+    transition: color 0.4s;
+    height: 100%; /* Gleich hoch wie der Toggle-Switch */
+    width: 30px; /* Breite anpassen, um genug Platz für den Text und das Icon zu haben */
+  }
+  
+  .label.left {
+    left: 10px;
+  }
+  
+  .label.right {
+    right: 10px;
+  }
+  
+  input:checked ~ .label.left {
+    color: #8d8d8d; /* Farbe ändern beim Aktivieren */
+  }
+  
+  input:not(:checked) ~ .label.right {
+    color: #8d8d8d; /* Farbe ändern beim Deaktivieren */
+  }
+  

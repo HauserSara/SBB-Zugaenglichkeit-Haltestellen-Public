@@ -1,0 +1,11 @@
+<div style="display: flex; justify-content: space-between;">
+    <h1>Einstellungen</h1>
+    <div class="list-element">
+        <sbb-icon svgIcon="low-vision-small" class="sbb-icon-small"></sbb-icon>
+        <toggle-on-off id="accessibility" [isChecked]="accessibility" (change)="onToggleChange($event)"></toggle-on-off>
+    </div>
+    <div class="list-element">
+        <sbb-icon svgIcon="wheelchair-small" class="sbb-icon-small"></sbb-icon>
+        <toggle-on-off id="guidancemarkings" [isChecked]="guidanceMarkings" (change)="onToggleChange($event)"></toggle-on-off>
+    </div>
+</div>

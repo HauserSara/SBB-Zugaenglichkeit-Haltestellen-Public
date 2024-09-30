@@ -1,0 +1,30 @@
+/* toggle-switch.component.css */
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-switch.active {
+    background-color: #c60018;
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: left 0.3s;
+  }
+  
+  .toggle-switch.active .toggle-circle {
+    left: 27.5px; /* Verschiebt den Kreis nach rechts, wenn aktiv */
+  }
+  
