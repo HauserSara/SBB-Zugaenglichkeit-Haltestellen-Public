@@ -22,6 +22,8 @@ cd client
 npm install
 ```
 
+Für die Darstellung der Hintergrundkarte wird ein API-Key von https://developer.sbb.ch von der Journey-Maps-Tiles API benötigt. Dieser muss im Code in client/src/index.html in Zeile 10 bei der Variable window.JM_API_KEY ergänzt werden.
+
 Starten die Applikation mit dem Befehl:
 ``` shell
 ng serve
@@ -40,7 +42,7 @@ ng serve
     - folium [0.16.0]
     - folium [0.16.0]
 
-6. Backend ausführen, virtuelle Umgebung starten und server *uvicorn* starten. Öffne http://localhost:8000/api/docs im Browser und verifiziere, ob das Backend läuft.
+3. Backend ausführen, virtuelle Umgebung starten und server *uvicorn* starten. Öffne http://localhost:8000/api/docs im Browser und verifiziere, ob das Backend läuft.
 ``` shell
 # navigiere zum server Ordner im Verzeichnis
 cd server
